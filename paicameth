@@ -1,0 +1,118 @@
+import { motion } from "framer-motion";
+
+export default function App() { return ( <div className="min-h-screen bg-gray-50 text-gray-900"> {/* Hero Section */} <section className="bg-blue-900 text-white py-20"> <div className="container mx-auto text-center"> <motion.h1 initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} className="text-4xl font-bold mb-4"> प्रमोद आलोक इंटरमीडिएट कॉलेज, मंगलपुर अमेठी </motion.h1> <p className="text-lg">“शिक्षा ही सफलता की कुंजी है”</p> </div> </section>
+
+{/* About Section */}
+  <section id="about" className="py-16 container mx-auto px-4">
+    <h2 className="text-3xl font-bold mb-6 text-center">हमारे बारे में</h2>
+    <p className="mb-4 text-lg">
+      प्रमोद आलोक इंटरमीडिएट कॉलेज, मंगलपुर अमेठी की स्थापना गुणवत्तापूर्ण शिक्षा और अनुशासन के उद्देश्य से की गई थी।
+      यहाँ विद्यार्थियों को शैक्षणिक, खेलकूद और सांस्कृतिक गतिविधियों में आगे बढ़ने का अवसर दिया जाता है।
+    </p>
+    <p className="text-lg font-semibold">प्रबंधक: डॉ. देवमणि त्रिपाठी</p>
+    <p className="text-lg font-semibold">प्रधानाचार्य: श्रीमती ममता त्रिपाठी</p>
+  </section>
+
+  {/* Messages Section */}
+  <section id="messages" className="py-16 bg-gray-100 px-4">
+    <h2 className="text-3xl font-bold mb-8 text-center">संदेश</h2>
+    <div className="grid md:grid-cols-2 gap-8 container mx-auto">
+      <div className="bg-white p-6 rounded-2xl shadow">
+        <img src="manager.jpg alt="Manager" className="w-32 h-32 mx-auto rounded-full mb-4" />
+        <h3 className="text-xl font-semibold text-center">डॉ. देवमणि त्रिपाठी</h3>
+        <p className="mt-2 text-gray-700 text-justify">
+          शिक्षा जीवन का आधार है। हमारा लक्ष्य है विद्यार्थियों को न केवल ज्ञान देना बल्कि उन्हें संस्कार और जीवन मूल्यों से भी समृद्ध करना।
+        </p>
+      </div>
+      <div className="bg-white p-6 rounded-2xl shadow">
+        <img src="/principal.jpg" alt="Principal" className="w-32 h-32 mx-auto rounded-full mb-4" />
+        <h3 className="text-xl font-semibold text-center">श्रीमती ममता त्रिपाठी</h3>
+        <p className="mt-2 text-gray-700 text-justify">
+          हमारे कॉलेज में विद्यार्थियों को आत्मविश्वास और उत्कृष्टता की राह पर ले जाना ही हमारी प्राथमिकता है।
+          शिक्षा के साथ अनुशासन और संस्कृति को महत्व दिया जाता है।
+        </p>
+      </div>
+    </div>
+  </section>
+
+  {/* Faculty Section */}
+  <section id="faculty" className="py-16 container mx-auto px-4">
+    <h2 className="text-3xl font-bold mb-6 text-center">हमारा अध्यापक मंडल</h2>
+    <ul className="list-disc list-inside text-lg grid md:grid-cols-2 gap-2">
+      <li>गंगा प्रसाद ओझा</li>
+      <li>विनोद कुमार पांडेय</li>
+      <li>राजेन्द्र कुमार राव</li>
+      <li>ज्ञानेश्वर पांडेय</li>
+      <li>सतीश चंद्र मिश्रा</li>
+      <li>अशोक कुमार यादव</li>
+      <li>अनमय मिश्रा</li>
+      <li>अभिषेक विश्वकर्मा</li>
+      <li>ज्ञान प्रकाश तिवारी</li>
+      <li>आदित्य यादव</li>
+      <li>नीलेश त्रिपाठी</li>
+      <li>राखी त्रिपाठी</li>
+      <li>कंचन मिश्रा</li>
+      <li>रश्मि त्रिपाठी</li>
+      <li>रश्मि श्रीवास्तव</li>
+      <li>श्रुति पांडेय</li>
+      <li>आकांक्षा शुक्ला</li>
+      <li>मीनाक्षी सिंह</li>
+      <li>पारुल मिश्रा</li>
+      <li>प्रीति सिंह</li>
+      <li>संध्या तिवारी</li>
+    </ul>
+  </section>
+
+  {/* Academics Section */}
+  <section id="academics" className="py-16 container mx-auto px-4">
+    <h2 className="text-3xl font-bold mb-6 text-center">पाठ्यक्रम</h2>
+    <ul className="list-disc list-inside text-lg">
+      <li>विज्ञान संकाय</li>
+      <li>कला संकाय</li>
+      <li>वाणिज्य संकाय</li>
+    </ul>
+  </section>
+
+  {/* Gallery Section */}
+  <section id="gallery" className="py-16 bg-gray-100 container mx-auto px-4">
+    <h2 className="text-3xl font-bold mb-6 text-center">गैलरी</h2>
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="bg-gray-300 h-40 rounded"></div>
+      <div className="bg-gray-300 h-40 rounded"></div>
+      <div className="bg-gray-300 h-40 rounded"></div>
+    </div>
+  </section>
+
+  {/* Admissions Section */}
+  <section id="admissions" className="py-16 container mx-auto px-4">
+    <h2 className="text-3xl font-bold mb-6 text-center">प्रवेश</h2>
+    <p className="text-lg mb-4">प्रवेश प्रक्रिया सरल और पारदर्शी है। आवश्यक दस्तावेज़: जन्म प्रमाणपत्र, अंकपत्र और पासपोर्ट साइज फोटो।</p>
+  </section>
+
+  {/* Contact Section */}
+  <section id="contact" className="py-16 bg-gray-100 container mx-auto px-4">
+    <h2 className="text-3xl font-bold mb-6 text-center">संपर्क करें</h2>
+    <p className="text-lg text-center">पता: प्रमोद नगर, मंगलपुर, ककवा रोड, अमेठी (उ.प्र.)</p>
+    <p className="text-lg text-center">फोन: 953217000</p>
+    <p className="text-lg text-center">ईमेल: info@paicmanglupur.ac.in</p>
+    <div className="mt-6 flex justify-center">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!..."
+        width="600"
+        height="450"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </section>
+
+  {/* Footer */}
+  <footer className="bg-blue-900 text-white text-center py-4 mt-10">
+    <p>© 2025 प्रमोद आलोक इंटरमीडिएट कॉलेज, मंगलपुर अमेठी</p>
+  </footer>
+</div>
+
+); }
+
